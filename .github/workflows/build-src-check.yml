@@ -19,7 +19,7 @@ jobs:
         with:
           java-version: 11
           distribution: temurin
-          cache: gradle
+      - uses: gradle/gradle-build-action@v2
       - name: buildSrc Tests
         env:
           FIREBASE_CI: 1

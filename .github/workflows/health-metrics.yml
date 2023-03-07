@@ -33,7 +33,7 @@ jobs:
         with:
           java-version: 11
           distribution: temurin
-          cache: gradle
+      - uses: gradle/gradle-build-action@v2
       - name: Set up Python 3.10
         uses: actions/setup-python@v4
         with:
@@ -68,7 +68,7 @@ jobs:
         with:
           java-version: 11
           distribution: temurin
-          cache: gradle
+      - uses: gradle/gradle-build-action@v2
       - name: Set up Python 3.10
         uses: actions/setup-python@v4
         with:
@@ -103,7 +103,7 @@ jobs:
         with:
           java-version: 11
           distribution: temurin
-          cache: gradle
+      - uses: gradle/gradle-build-action@v2
       - name: Set up Python 3.10
         uses: actions/setup-python@v4
         with:

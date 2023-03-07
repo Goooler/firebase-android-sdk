@@ -13,6 +13,7 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v3
+      - uses: gradle/gradle-build-action@v2
 
       - name: Perform gradle build
         run: |
